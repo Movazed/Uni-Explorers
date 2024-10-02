@@ -1,8 +1,10 @@
 import { useContext } from "react";
 import "./Header.css";
-import { FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaYoutube } from "react-icons/fa";
 import Slider from "../../utils/slider/Slider";
 import { MyContext } from "../../context/AppContext";
+import { FiInstagram } from "react-icons/fi";
+import { BsWhatsapp } from "react-icons/bs";
 
 const contentData = [
   {
@@ -72,8 +74,11 @@ const Header = () => {
         <Slider/>
       </div>
 
-      <div>
-        Social Icons Here
+      <div className = "flex gap-4 text-xl text-white absolute bottom-[-60px] right-[100px]">
+        <FaYoutube/>
+        <FiInstagram/>
+        <BsWhatsapp/>
+        <FaFacebook/>
       </div>
       
       </div>
