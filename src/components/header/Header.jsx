@@ -18,7 +18,11 @@ const contentData = [
   {
     country: "Kasol",
     title: "Explore Kasol",
-  }
+  },
+  {
+    country: "Banaras",
+    title: "Explore Banaras",
+  },
 ];
 
 const Header = () => {

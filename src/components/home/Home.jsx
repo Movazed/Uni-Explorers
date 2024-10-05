@@ -15,6 +15,8 @@ const Home = () => {
         return "bgContainer2";
       case 2:
         return "bgContainer3";
+      case 3:
+        return "bgContainer4";
       default:
         return "bgContainer1";
     }

@@ -1,6 +1,7 @@
 .bgContainer1,
 .bgContainer2,
-.bgContainer3 {
+.bgContainer3,
+.bgContainer4 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -16,4 +17,8 @@
 
 .bgContainer3 {
     background-image: linear-gradient(to top, #001E23, rgba(255, 0, 0, 0)), url("../../assets/bg/manaliBg.jpg");
+}
+
+.bgContainer4 {
+    background-image: linear-gradient(to top, #001E23, rgba(255, 0, 0, 0)), url("../../assets/bg/banarasBg.jpg");
 }

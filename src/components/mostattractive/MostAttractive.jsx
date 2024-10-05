@@ -3,24 +3,24 @@ import img1 from "../../assets/muusoorie/mussorieLeft.png";
 import img2 from "../../assets/manali/manaliLeft.png";
 import img3 from "../../assets/kasol/KasolLeft.png";
 
-import img4 from "../../assets/muusoorie/mussorieRight.jpg";
-import img5 from "../../assets/manali/manaliRight.png";
-import img6 from "../../assets/kasol/KasolRight.jpg";
+import img4 from "../../assets/muusoorie/mussorieRight.png";
+import img5 from "../../assets/manali/manaliRight_new.png";
+import img6 from "../../assets/kasol/KasolRight.png";
 
 import img7 from "../../assets/muusoorie/mussorie1.png";
 import img8 from "../../assets/manali/manali1.png";
 import img9 from "../../assets/kasol/kasol1.png";
 
-import img10 from "../../assets/muusoorie/mussorie2.jpg";
-import img11 from "../../assets/manali/manali2.jpg";
-import img12 from "../../assets/kasol/Kasol2.jpg";
+import img10 from "../../assets/muusoorie/mussorie2.png";
+import img11 from "../../assets/manali/manali2.png";
+import img12 from "../../assets/kasol/kasol2.png";
 
-import img13 from "../../assets/muusoorie/mussorie3.jpg";
-import img14 from "../../assets/manali/manali3.jpg";
-import img15 from "../../assets/kasol/Kasol3.jpg";
+import img13 from "../../assets/muusoorie/mussorie3.png";
+import img14 from "../../assets/manali/manali3.png";
+import img15 from "../../assets/kasol/kasol3.png";
 
 import bgLeft from "../../assets/bg/Asset6.png";
-import bgRight from "../../assets/bg/Asset7.png";
+// import bgRight from "../../assets/bg/Asset7.png";
 
 import { BsHexagonFill } from "react-icons/bs";
 import "aos/dist/aos.css";
@@ -60,6 +60,14 @@ const MostAttractive = () => {
       rightImg1: img6,
       rightImg2: img12,
     },
+    {
+      name: "Banaras",
+      // leftImg1: img16,  // Replace with Banaras image path
+      // leftImg2: img17,  // Replace with Banaras image path
+      // leftImg3: img18,  // Replace with Banaras image path
+      // rightImg1: img19, // Replace with Banaras image path
+      // rightImg2: img20, // Replace with Banaras image path
+    }
   ];
 
   const handleChange = (index) => {
@@ -70,6 +78,8 @@ const MostAttractive = () => {
         return datas[1];
       case 2:
         return datas[2];
+      case 3:
+        return datas[3];
       default:
         return datas[0];
     }
@@ -133,6 +143,20 @@ const MostAttractive = () => {
             harum repudiandae quibusdam inventore eos quasi porro optio
             </p>
           </div>
+
+          <img src={infos.rightImg1} alt= "" 
+          className="absolute top-[60px] right-[-150px] w-[700px] h-[650px]"
+          data-aos="fade-left"
+          data-aos-delay="1000"
+          data-aos-duration="1000"/>  
+          
+          <img src={infos.rightImg2} alt= "" 
+          className="absolute top-[43%] right-[30%] w-[250px] h-[250px]"
+          data-aos="fade-right"
+          data-aos-delay="1000"
+          data-aos-duration="1500"/>
+
+
           
           <div className="relative flex items-center">
             <BsHexagonFill className="text-[30px] rotate-[90deg] text-[#2FA8B9]" />
@@ -141,6 +165,14 @@ const MostAttractive = () => {
             </p>
           </div>
 
+          <img src={infos.leftImg3} alt= "" 
+          className="absolute top-[78%] left-[32%] w-[190px] h-[190px]"
+          data-aos="fade-right"
+          data-aos-delay="1000"
+          data-aos-duration="1500"/>
+
+<img src={bgLeft} alt="" className="absolute top-[78%] left-[-120px] w-[430px] h-[430px]"/>
+<img src={bgLeft} alt="" className="absolute top-[78%] right-[-120px] w-[250px] h-[250px]" />
 
         </div>
       </section>

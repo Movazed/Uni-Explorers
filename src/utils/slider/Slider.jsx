@@ -9,6 +9,7 @@ import { MyContext } from "../../context/AppContext";
 import img1 from "../../assets/muusoorie/mussorieSlider.jpg";
 import img2 from "../../assets/kasol/KasolSlider.jpg";
 import img3 from "../../assets/manali/manaliSlider.jpg";
+import img4 from "../../assets/banaras/banarasSlider.jpg";
 
 const Slider = () => {
   const swiperRef = useRef(null);
@@ -38,6 +39,10 @@ const Slider = () => {
     {
       name: "Manali",
       img: img3,
+    },
+    {
+      name: "Banaras",
+      img: img4,
     }
   ];
 
